@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="15dp" android:id="@+id/layoutStars"
+>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            tools:ignore="MissingConstraints">
+        <TextView
+                android:gravity="center"
+                tools:text="Nome Repositorio"
+                android:background="@color/colorPrimary"
+                android:layout_width="191dp"
+                android:layout_height="46dp"
+                android:id="@+id/nome"
+                tools:layout_editor_absoluteY="56dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginEnd="8dp"
+                tools:ignore="MissingConstraints"/>
+        <TextView
+                tools:text="Stars Count"
+                android:layout_width="187dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="157dp"
+                android:id="@+id/stars"
+                tools:layout_editor_absoluteY="0dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                tools:ignore="MissingConstraints"/>
+        <TextView
+                tools:text="Fork Count"
+                android:layout_width="192dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/fork"
+                android:layout_height="26dp"
+                android:gravity="center"
+                tools:layout_editor_absoluteY="151dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/colorPrimaryDark"
+                tools:ignore="MissingConstraints"/>
+        <TextView
+                tools:text="Watchers Count"
+                android:background="@color/colorPrimary"
+                android:layout_width="192dp"
+                android:layout_height="28dp"
+                android:id="@+id/watchers"
+                android:gravity="center"
+                tools:layout_editor_absoluteY="117dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginEnd="4dp"
+                tools:ignore="MissingConstraints"/>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="128dp"
+            android:layout_height="140dp"
+            tools:srcCompat="@tools:sample/avatars[0]"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/imageGithub"
+            tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

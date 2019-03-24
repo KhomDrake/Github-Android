@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github-Android</string>
+    <string name="title_toolbar">Git Hub Project</string>
+</resources>
